@@ -207,7 +207,8 @@ body {
   height: 300px;
 }
 @media (min-width: 1350px) {
-  .maj-box {
+  .maj-box,
+  .sub-maj-box {
     max-width: 1320px !important;
   }
 } /*
@@ -266,11 +267,16 @@ body {
   border: none;
   border-top: 2px solid #d9d9d9;
 }
+.sub-posts {
+  border: none !important;
+}
 .liked {
   border: none;
   border-right: 2px solid #d9d9d9;
 }
-
+.sub-liked {
+  border-right: 2px solid #cbbdbd !important;
+}
 #quotes {
   color: black;
   padding: 60px;
@@ -281,6 +287,35 @@ body {
   letter-spacing: 0.008em;
 }
 
+@media (max-width: 532px) {
+  .date i {
+    font-size: calc(100vw / 12) !important;
+    padding-right: 4px;
+  }
+  .recent .row {
+    margin: 0px !important;
+  }
+  .contextb {
+    font-size: 1.3em !important;
+  }
+}
+@media (max-width: 512px) {
+  .post-brief2 {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 992px) {
+  #quotes,
+  #quotes p,
+  .zz {
+    font-size: calc(100vw / 21) !important;
+  }
+}
+@media (min-width: 767.8px) and (max-width: 992px) {
+  .liked-post-inner {
+    font-size: calc(100vw / 70) !important;
+  }
+}
 @media (max-width: 670px) {
   #content-body {
     overflow: hidden !important;
@@ -325,6 +360,12 @@ body {
   border-bottom: 2px solid #d9d9d9;
 }
 
+.sub-liked .like-inside1,
+.sub-liked .like-inside2,
+.sub-liked .like-inside3,
+.sub-liked .like-inside4 {
+  border-bottom: 2px solid #cbbdbd;
+}
 .like-inside2 {
   height: 500px;
 }
@@ -440,11 +481,61 @@ body {
   animation: heart 1s ease-in-out infinite;
   position: absolute;
 }
+
+.sub-head-img img {
+  width: 100%;
+  height: auto;
+  margin: 0px !important;
+}
+.sub-content-body {
+  background-image: linear-gradient(to right, #303032 0%, #030000 100%),
+    url("images/texas.jfif");
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.sub-maj-box {
+  background-color: rgba(256, 256, 256, 0.8);
+  padding: none !important;
+}
+
+.z1 {
+  font-size: 20px;
+}
+.z2 {
+  font-size: 0.8rem !important;
+}
+.sub-recent .row {
+  height: 170px !important;
+  border: none;
+  margin: 18px !important;
+}
+.r2 {
+  border-bottom: 2px solid #cbbdbd !important;
+}
 @keyframes heart {
   0% {
     font-size: 20px;
   }
   50% {
     font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .sub-recent .row {
+    height: calc(100vw / 2) !important;
+    border: none;
+  }
+}
+@media (max-width: 571.8px) {
+  .sub-recent .row {
+    height: calc(100vw / 1.1) !important;
+  }
+}
+@media (min-width: 572px) and (max-width: 767px) {
+  .sub-recent .row {
+    height: calc(100vw / 1.4) !important;
   }
 }
