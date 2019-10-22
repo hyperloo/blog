@@ -11,9 +11,6 @@ body {
   width: 100%;
   height: 400px;
 }
-#heading {
-}
-
 .navbar-nav li {
   padding: 0 10px;
 }
@@ -211,17 +208,7 @@ body {
   .sub-maj-box {
     max-width: 1320px !important;
   }
-} /*
-.box1,
-.box4 {
-  padding-left: 0px !important;
-  border-left: 1px solid #999;
-}
-.box2,
-.box3 {
-  padding-right: 0px !important;
-}
-*/
+} 
 .context {
   font-family: "adelle-sans", Helvetica, sans-serif;
   position: absolute;
@@ -539,3 +526,6 @@ body {
     height: calc(100vw / 1.4) !important;
   }
 }
+.sadss{
+  color:blue;
+  padding;0px;
